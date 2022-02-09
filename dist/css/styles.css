@@ -93,11 +93,27 @@ h3 {
 
 .footer {
   padding: 0 5% 10% 5%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+}
+@media (min-width: 768px) {
+  .footer {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+  }
+}
+.footer__left {
+  padding-bottom: 4%;
+}
+.footer__text {
+  padding-top: 20px 0;
 }
 
+@media (min-width: 768px) {
+  .footer__social {
+    justify-self: flex-end;
+  }
+}
 .footer__social__list {
   display: flex;
   gap: 20px;
