@@ -1,3 +1,4 @@
+@use '../variables/colors' as colors;
 @import "../variables/breakpoints";
 
 .footer {
@@ -27,5 +28,9 @@
 	&__list {
 		display: flex;
 		gap: 20px;
+	}
+
+	.social-icon > path:hover {
+		fill: colors.$base-orange;
 	}
 }

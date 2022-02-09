@@ -118,6 +118,9 @@ h3 {
   display: flex;
   gap: 20px;
 }
+.footer__social .social-icon > path:hover {
+  fill: #FA7453;
+}
 
 body {
   font-family: "IBM Plex Sans";
@@ -176,8 +179,9 @@ body {
   color: #191826;
 }
 
-.wrapper {
+.container {
   position: relative;
+  overflow-x: clip;
 }
 
 .main__wrapper__app {

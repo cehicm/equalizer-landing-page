@@ -1,8 +1,9 @@
 @use "../variables/colors" as colors;
 @import "../variables/breakpoints";
 
-.wrapper {
+.container {
 	position: relative;
+	overflow-x: clip;
 }
 
 .main {
