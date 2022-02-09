@@ -82,7 +82,6 @@ h3 {
 @media (min-width: 768px) {
   .header {
     width: 70%;
-    margin-bottom: 300px;
   }
 }
 .header__logo {
@@ -174,9 +173,22 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (min-width: 768px) {
+  .main__wrapper__app {
+    height: 600px;
+    background-position: 40% -30%;
+    background-size: 300px;
+  }
+}
 .main__wrapper__app .app-image {
   width: 50%;
   transform: translate(50%, -20%);
+}
+@media (min-width: 768px) {
+  .main__wrapper__app .app-image {
+    width: 32%;
+    transform: translate(20%, -20%);
+  }
 }
 .main__wrapper__pricing {
   transform: translateY(-30px);
@@ -186,6 +198,14 @@ body {
   padding: 10% 12%;
   background-color: #FA7453;
   border-radius: 12px;
+}
+@media (min-width: 768px) {
+  .main__wrapper__pricing {
+    position: absolute;
+    width: 300px;
+    right: 0;
+    transform: translate(-85px, -460px);
+  }
 }
 .main__wrapper__pricing .button-default {
   width: 100%;

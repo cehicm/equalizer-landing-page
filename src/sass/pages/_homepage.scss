@@ -16,9 +16,20 @@
 			background-repeat: no-repeat;
 			background-position: center;
 
+			@include sc-breakpoint(768) {
+				height: 600px;
+				background-position: 40% -30%;
+				background-size: 300px;
+			}
+
 			.app-image {
 				width: 50%;
 				transform: translate(50%, -20%);
+
+				@include sc-breakpoint(768) {
+					width: 32%;
+					transform: translate(20%, -20%);
+				}
 			}
 		}
 
@@ -30,6 +41,13 @@
 			padding: 10% 12%;
 			background-color: colors.$base-orange;
 			border-radius: 12px;
+
+			@include sc-breakpoint(768) {
+				position: absolute;
+				width: 300px;
+				right: 0;
+				transform: translate(-85px, -460px);
+			}
 
 			.button-default {
 				width: 100%;
