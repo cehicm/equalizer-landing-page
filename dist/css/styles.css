@@ -22,3 +22,23 @@ body {
   src: local(""), url("/dist/fonts/ibm-plex-sans-v13-latin/ibm-plex-sans-v13-latin-700.eot?#iefix") format("embedded-opentype"), url("/dist/fonts/ibm-plex-sans-v13-latin/ibm-plex-sans-v13-latin-700.woff2") format("woff2"), url("/dist/fonts/ibm-plex-sans-v13-latin/ibm-plex-sans-v13-latin-700.woff") format("woff"), url("/dist/fonts/ibm-plex-sans-v13-latin/ibm-plex-sans-v13-latin-700.ttf") format("truetype"), url("/dist/fonts/ibm-plex-sans-v13-latin/ibm-plex-sans-v13-latin-700.svg#IBMPlexSans") format("svg");
   /* Legacy iOS */
 }
+.button-default {
+  width: 300px;
+  height: 60px;
+  border: none;
+  border-radius: 12px;
+}
+.button-default__black {
+  background-color: #191826;
+  color: #FCFAF9;
+}
+.button-default__black:hover {
+  background-color: #66E2DC;
+}
+.button-default__white {
+  background-color: #FCFAF9;
+  color: #191826;
+}
+.button-default__white:hover {
+  background-color: #FFB964;
+}

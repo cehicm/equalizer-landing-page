@@ -1,0 +1,26 @@
+@use 'variables/colors' as colors;
+
+.button-default {
+	width: 300px;
+	height: 60px;
+	border: none;
+	border-radius: 12px;
+
+	&__black {
+		background-color: colors.$black;
+		color: colors.$white;
+
+		&:hover {
+			background-color: colors.$aqua-blue;
+		}
+	}
+
+	&__white {
+		background-color: colors.$white;
+		color: colors.$black;
+
+		&:hover {
+			background-color: colors.$base-yellow;
+		}
+	}
+}
