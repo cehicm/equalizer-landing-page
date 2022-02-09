@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+}
+
+/* ibm-plex-sans-regular - latin */
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/dist/fonts/ibm-plex-sans-v13-latin/ibm-plex-sans-v13-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("/dist/fonts/ibm-plex-sans-v13-latin/ibm-plex-sans-v13-latin-regular.eot?#iefix") format("embedded-opentype"), url("/dist/fonts/ibm-plex-sans-v13-latin/ibm-plex-sans-v13-latin-regular.woff2") format("woff2"), url("/dist/fonts/ibm-plex-sans-v13-latin/ibm-plex-sans-v13-latin-regular.woff") format("woff"), url("/dist/fonts/ibm-plex-sans-v13-latin/ibm-plex-sans-v13-latin-regular.ttf") format("truetype"), url("/dist/fonts/ibm-plex-sans-v13-latin/ibm-plex-sans-v13-latin-regular.svg#IBMPlexSans") format("svg");
+  /* Legacy iOS */
+}
+/* ibm-plex-sans-700 - latin */
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/dist/fonts/ibm-plex-sans-v13-latin/ibm-plex-sans-v13-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("/dist/fonts/ibm-plex-sans-v13-latin/ibm-plex-sans-v13-latin-700.eot?#iefix") format("embedded-opentype"), url("/dist/fonts/ibm-plex-sans-v13-latin/ibm-plex-sans-v13-latin-700.woff2") format("woff2"), url("/dist/fonts/ibm-plex-sans-v13-latin/ibm-plex-sans-v13-latin-700.woff") format("woff"), url("/dist/fonts/ibm-plex-sans-v13-latin/ibm-plex-sans-v13-latin-700.ttf") format("truetype"), url("/dist/fonts/ibm-plex-sans-v13-latin/ibm-plex-sans-v13-latin-700.svg#IBMPlexSans") format("svg");
+  /* Legacy iOS */
+}
