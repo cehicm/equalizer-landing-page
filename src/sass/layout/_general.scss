@@ -2,6 +2,7 @@
 
 body {
 	background-image: url("/src/assets/bg-main-mobile.png");
+	background-position: top -180px right -180px;
 
 	@include sc-breakpoint(768) {
 		background-image: url("/src/assets/bg-main-tablet.png");
