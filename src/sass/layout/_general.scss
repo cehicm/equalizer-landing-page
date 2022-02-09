@@ -1,0 +1,16 @@
+@import "../variables/breakpoints";
+
+body {
+	background-image: url("/src/assets/bg-main-mobile.png");
+
+	@include sc-breakpoint(768) {
+		background-image: url("/src/assets/bg-main-tablet.png");
+	}
+	@include sc-breakpoint(1024) {
+		background-image: url("/src/assets/bg-main-desktop.png");
+	}
+}
+
+ul > li {
+	list-style-type: none;
+}

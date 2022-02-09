@@ -42,3 +42,21 @@ body {
 .button-default__white:hover {
   background-color: #FFB964;
 }
+
+body {
+  background-image: url("/src/assets/bg-main-mobile.png");
+}
+@media (min-width: 768px) {
+  body {
+    background-image: url("/src/assets/bg-main-tablet.png");
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    background-image: url("/src/assets/bg-main-desktop.png");
+  }
+}
+
+ul > li {
+  list-style-type: none;
+}
