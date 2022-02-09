@@ -1,10 +1,21 @@
+@import "../variables/breakpoints";
+
 .header {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
 	padding: 10% 5%;
 
+	@include sc-breakpoint(768) {
+		width: 70%;
+		margin-bottom: 300px;
+	}
+
 	&__logo {
 		width: 150px;
+	}
+
+	&__content {
+		padding-top: 50px;
 	}
 }
