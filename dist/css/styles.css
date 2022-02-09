@@ -23,8 +23,6 @@ body {
   /* Legacy iOS */
 }
 .button-default {
-  width: 300px;
-  height: 60px;
   border: none;
   border-radius: 12px;
 }
@@ -65,6 +63,12 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
 .header {
   padding: 20px;
 }
@@ -85,15 +89,16 @@ body {
   line-height: 48px;
 }
 
+.main {
+  color: #FCFAF9;
+}
 .main__title {
   font-size: 32px;
   line-height: 40px;
 }
-
 .main__text {
   font-size: 18px;
   line-height: 28px;
-  color: #FCFAF9;
 }
 
 .pricing__title {
@@ -112,6 +117,35 @@ body {
   color: #191826;
 }
 
+.main__wrapper__app {
+  position: relative;
+  margin-top: 100px;
+  background-color: #191826;
+  background-image: url("/src/assets/bg-pattern-2.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .main__wrapper__app .app-image {
-  width: 200px;
+  width: 50%;
+  transform: translate(50%, -20%);
+}
+.main__wrapper__pricing {
+  transform: translateY(-70px);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px 20px;
+  background-color: #FA7453;
+  border-radius: 12px;
+}
+.main__wrapper__pricing .button-default {
+  width: 250px;
+  height: 50px;
+}
+.main__wrapper__pricing .main__text {
+  margin: 0;
+}
+.main__wrapper__pricing .pricing__title {
+  padding: 10px 0;
 }

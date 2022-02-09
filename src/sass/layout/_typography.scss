@@ -17,15 +17,18 @@ body {
 	line-height: 48px;
 }
 
-.main__title {
-	font-size: 32px;
-	line-height: 40px;
-}
-
-.main__text {
-	font-size: 18px;
-	line-height: 28px;
+.main {
 	color: colors.$white;
+
+	&__title {
+		font-size: 32px;
+		line-height: 40px;
+	}
+
+	&__text {
+		font-size: 18px;
+		line-height: 28px;
+	}
 }
 
 .pricing__title {

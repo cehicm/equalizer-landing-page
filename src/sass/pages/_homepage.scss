@@ -1,0 +1,43 @@
+@use "../variables/colors" as colors;
+
+.main {
+	&__wrapper {
+		&__app {
+			position: relative;
+			margin-top: 100px;
+			background-color: colors.$black;
+			background-image: url("/src/assets/bg-pattern-2.svg");
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+
+			.app-image {
+				width: 50%;
+				transform: translate(50%, -20%);
+			}
+		}
+
+		&__pricing {
+			transform: translateY(-70px);
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+			padding: 30px 20px;
+			background-color: colors.$base-orange;
+			border-radius: 12px;
+
+			.button-default {
+				width: 250px;
+				height: 50px;
+			}
+
+			.main__text {
+				margin: 0;
+			}
+
+			.pricing__title {
+				padding: 10px 0;
+			}
+		}
+	}
+}
