@@ -9,6 +9,9 @@ body {
 	}
 	@include sc-breakpoint(1024) {
 		background-image: url("/src/assets/bg-main-desktop.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: left -100px top -100px;
 	}
 }
 

@@ -21,12 +21,23 @@ body {
 		font-size: 64px;
 		line-height: 64px;
 	}
+
+	@include sc-breakpoint(1024) {
+		font-size: 88px;
+		line-height: 88px;
+	}
 }
 
 .header__text {
 	@include sc-breakpoint(768) {
 		font-size: 18px;
 		line-height: 28px;
+	}
+
+	@include sc-breakpoint(1024) {
+		font-size: 20px;
+		line-height: 34px;
+		width: 85%;
 	}
 }
 
@@ -36,11 +47,21 @@ body {
 	&__title {
 		font-size: 32px;
 		line-height: 40px;
+
+		@include sc-breakpoint(1024) {
+			font-size: 40px;
+			line-height: 52px;
+		}
 	}
 
 	&__text {
 		font-size: 18px;
 		line-height: 28px;
+
+		@include sc-breakpoint(1024) {
+			font-size: 20px;
+			line-height: 34px;
+		}
 	}
 }
 
@@ -51,8 +72,8 @@ body {
 
 	&-span {
 		font-size: 20px;
-		font-weight: 400;
 		line-height: 32px;
+		font-weight: 400;
 	}
 }
 
@@ -61,4 +82,9 @@ body {
 		font-weight: 700;
 		color: colors.$black;
 	}
+}
+
+.button--default {
+	font-size: 18px;
+	line-height: 32px;
 }
