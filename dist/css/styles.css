@@ -87,7 +87,7 @@ h3 {
     width: 70%;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1024px) {
   .header {
     padding-left: 0;
   }
@@ -128,9 +128,9 @@ h3 {
 @media (min-width: 1024px) {
   .footer {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    margin-top: 300px;
     padding: 0;
-    margin-bottom: 50px;
+    width: 90%;
+    margin: 300px auto 50px auto;
   }
 }
 @media (min-width: 768px) {
@@ -269,6 +269,9 @@ body {
 .wrapper {
   position: relative;
   overflow-x: clip;
+}
+
+.container {
   width: 90%;
   margin: 0 auto;
 }
@@ -330,24 +333,27 @@ body {
 }
 @media (min-width: 1024px) {
   .main__wrapper__pricing {
-    transform: translate(-7%, -68%);
+    transform: translate(-16%, -85%);
+    padding: 6% 10%;
   }
 }
 @media (min-width: 1400px) {
   .main__wrapper__pricing {
     width: 450px;
     height: 600px;
-    transform: translate(-75px, -750px);
+    transform: translate(-140px, -750px);
     padding: 10% 7%;
     justify-content: space-between;
   }
 }
 @media (min-width: 2560px) {
   .main__wrapper__pricing {
-    width: 30%;
-    height: 40%;
-    transform: translate(-116px, -1311px);
+    width: 24%;
+    height: 32%;
+    transform: translate(-266px, -1303px);
     padding: 10% 7%;
+    justify-content: center;
+    gap: 80px;
   }
 }
 .main__wrapper__pricing .buttons {

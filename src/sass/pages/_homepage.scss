@@ -4,6 +4,9 @@
 .wrapper {
 	position: relative;
 	overflow-x: clip;
+}
+
+.container {
 	width: 90%;
 	margin: 0 auto;
 }
@@ -63,21 +66,24 @@
 			}
 
 			@include sc-breakpoint(1024) {
-				transform: translate(-7%, -68%);
+				transform: translate(-16%, -85%);
+				padding: 6% 10%;
 			}
 			@include sc-breakpoint(1400) {
 				width: 450px;
 				height: 600px;
-				transform: translate(-75px, -750px);
+				transform: translate(-140px, -750px);
 				padding: 10% 7%;
 				justify-content: space-between;
 			}
 
 			@include sc-breakpoint(2560) {
-				width: 30%;
-				height: 40%;
-				transform: translate(-116px, -1311px);
+				width: 24%;
+				height: 32%;
+				transform: translate(-266px, -1303px);
 				padding: 10% 7%;
+				justify-content: center;
+				gap: 80px;
 			}
 
 			.buttons {
