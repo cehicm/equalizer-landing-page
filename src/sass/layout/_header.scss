@@ -10,6 +10,10 @@
 		width: 70%;
 	}
 
+	@include sc-breakpoint(1400) {
+		padding-left: 0;
+	}
+
 	&__logo {
 		width: 150px;
 	}
