@@ -21,4 +21,20 @@
 	&__content {
 		padding-top: 50px;
 	}
+
+	&__title {
+		@include sc-breakpoint(1820) {
+			width: 60%;
+		}
+	}
+
+	&__text {
+		@include sc-breakpoint(1024) {
+			width: 95%;
+		}
+
+		@include sc-breakpoint(1820) {
+			width: 55%;
+		}
+	}
 }

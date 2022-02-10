@@ -14,9 +14,16 @@
 	@include sc-breakpoint(1024) {
 		grid-template-columns: repeat(3, minmax(0, 1fr));
 		margin-top: 300px;
+		padding: 0;
+		margin-bottom: 50px;
 	}
 
 	&__logo {
+		@include sc-breakpoint(768) {
+			grid-row: 1;
+			grid-column: 1;
+		}
+
 		@include sc-breakpoint(1024) {
 			grid-row: 1;
 		}
@@ -24,8 +31,9 @@
 
 	&__text {
 		padding-top: 20px;
+
 		@include sc-breakpoint(768) {
-			grid-row: 1;
+			grid-row: 2;
 		}
 
 		@include sc-breakpoint(1024) {
@@ -35,6 +43,8 @@
 }
 
 .footer__social {
+	padding-top: 10px;
+
 	@include sc-breakpoint(768) {
 		justify-self: flex-end;
 		grid-row: 2;
