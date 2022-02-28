@@ -76,6 +76,12 @@ h3 {
   margin: 0;
 }
 
+.header,
+.container,
+.footer {
+  max-width: 1800px;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -127,9 +133,9 @@ h3 {
 }
 @media (min-width: 1024px) {
   .footer {
+    width: 90%;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     padding: 0;
-    width: 90%;
     margin: 300px auto 50px auto;
   }
 }
@@ -281,6 +287,9 @@ body {
     margin-top: 150px;
   }
 }
+.main__wrapper {
+  position: relative;
+}
 .main__wrapper__app {
   position: relative;
   margin-top: 100px;
@@ -328,29 +337,25 @@ body {
     position: absolute;
     width: 300px;
     right: 0;
-    transform: translate(-18%, -80%);
+    transform: translate(-10%, -82%);
   }
 }
 @media (min-width: 1024px) {
   .main__wrapper__pricing {
-    transform: translate(-16%, -85%);
+    transform: translate(-5%, -82%);
     padding: 6% 10%;
   }
 }
 @media (min-width: 1400px) {
   .main__wrapper__pricing {
-    width: 450px;
-    height: 600px;
-    transform: translate(-140px, -750px);
+    width: 550px;
+    transform: translate(-10%, -90%);
     padding: 10% 7%;
     justify-content: space-between;
   }
 }
 @media (min-width: 2560px) {
   .main__wrapper__pricing {
-    width: 24%;
-    height: 32%;
-    transform: translate(-266px, -1303px);
     padding: 10% 7%;
     justify-content: center;
     gap: 80px;

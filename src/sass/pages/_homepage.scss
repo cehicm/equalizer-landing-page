@@ -17,6 +17,8 @@
 	}
 
 	&__wrapper {
+		position: relative;
+
 		&__app {
 			position: relative;
 			margin-top: 100px;
@@ -62,25 +64,23 @@
 				position: absolute;
 				width: 300px;
 				right: 0;
-				transform: translate(-18%, -80%);
+				transform: translate(-10%, -82%);
 			}
 
 			@include sc-breakpoint(1024) {
-				transform: translate(-16%, -85%);
+				transform: translate(-5%, -82%);
 				padding: 6% 10%;
 			}
+
 			@include sc-breakpoint(1400) {
-				width: 450px;
-				height: 600px;
-				transform: translate(-140px, -750px);
+				width: 550px;
+				// height: 600px;
+				transform: translate(-10%, -90%);
 				padding: 10% 7%;
 				justify-content: space-between;
 			}
 
 			@include sc-breakpoint(2560) {
-				width: 24%;
-				height: 32%;
-				transform: translate(-266px, -1303px);
 				padding: 10% 7%;
 				justify-content: center;
 				gap: 80px;

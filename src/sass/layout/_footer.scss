@@ -12,9 +12,9 @@
 	}
 
 	@include sc-breakpoint(1024) {
+		width: 90%;
 		grid-template-columns: repeat(3, minmax(0, 1fr));
 		padding: 0;
-		width: 90%;
 		margin: 300px auto 50px auto;
 	}
 
