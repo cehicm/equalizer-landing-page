@@ -7,8 +7,11 @@
 }
 
 .container {
-	width: 90%;
 	margin: 0 auto;
+
+	@include sc-breakpoint(768) {
+		width: 90%;
+	}
 }
 
 .main {
@@ -27,6 +30,7 @@
 			background-size: contain;
 			background-repeat: no-repeat;
 			background-position: center;
+			border-radius: 12px;
 
 			@include sc-breakpoint(768) {
 				height: 600px;
@@ -74,8 +78,8 @@
 
 			@include sc-breakpoint(1400) {
 				width: 550px;
-				// height: 600px;
-				transform: translate(-10%, -90%);
+				height: 600px;
+				transform: translate(-5%, -90%);
 				padding: 10% 7%;
 				justify-content: space-between;
 			}

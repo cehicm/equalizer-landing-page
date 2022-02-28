@@ -282,8 +282,12 @@ body {
 }
 
 .container {
-  width: 90%;
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 90%;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -302,6 +306,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 12px;
 }
 @media (min-width: 768px) {
   .main__wrapper__app {
@@ -353,7 +358,8 @@ body {
 @media (min-width: 1400px) {
   .main__wrapper__pricing {
     width: 550px;
-    transform: translate(-10%, -90%);
+    height: 600px;
+    transform: translate(-5%, -90%);
     padding: 10% 7%;
     justify-content: space-between;
   }
